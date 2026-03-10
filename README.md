@@ -25,6 +25,3 @@ The public site describes Rook as:
 - product feedback and feature requests
 - public questions about how Rook works
 
-## Source Notes
-
-This README is based on the current public copy on [hellorook.ai](https://hellorook.ai) and the live interface at [handbook.hellorook.ai](https://handbook.hellorook.ai), checked on March 10, 2026.
