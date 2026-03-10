@@ -1,0 +1,58 @@
+name: Bug report
+description: Report something on hellorook.ai that is broken, confusing, or not working as expected.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug report. Please include enough detail for someone else to reproduce the problem.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected to happen instead.
+      placeholder: When I try to..., the site instead...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the shortest set of steps that reproduces the issue.
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. See error...
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page or feature
+      description: Link to the affected page, or name the feature if no URL applies.
+      placeholder: https://hellorook.ai/...
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Impact
+      options:
+        - Blocks core usage
+        - Major issue
+        - Minor issue
+        - Cosmetic issue
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Share device, browser, OS, and anything else relevant.
+      placeholder: macOS 15, Chrome 134, iPhone 16, etc.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or error details
+      description: Paste error messages, logs, or add screenshots if helpful.
+

@@ -1,0 +1,45 @@
+name: General feedback
+description: Share ideas, reactions, or product feedback about hellorook.ai.
+title: "[Feedback] "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for product feedback, feature ideas, and general suggestions.
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What do you want to share?
+      placeholder: I liked..., I found it confusing that..., It would help if...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Onboarding
+        - Core product experience
+        - AI responses
+        - UI / design
+        - Performance
+        - Pricing / plans
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why this matters
+      description: What problem would this solve, or what would improve?
+      placeholder: This would help because...
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or references
+      description: Add links, screenshots, or examples if relevant.
+

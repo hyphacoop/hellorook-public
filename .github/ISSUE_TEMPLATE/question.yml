@@ -1,0 +1,38 @@
+name: Question
+description: Ask a public question about hellorook.ai.
+title: "[Question] "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for public questions about how hellorook.ai works, expected behavior, or where to find something.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to know?
+      placeholder: How does..., Where can I..., Is it possible to...
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What were you trying to do, and what have you already checked?
+      placeholder: I was trying to..., and I already looked at...
+  - type: dropdown
+    id: type
+    attributes:
+      label: Question type
+      options:
+        - How-to
+        - Expected behavior
+        - Account or access
+        - Product capability
+        - Documentation
+        - Other
+    validations:
+      required: true
+
